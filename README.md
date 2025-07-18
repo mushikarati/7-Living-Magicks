@@ -8,15 +8,6 @@ This repository **excludes** all mathematical internals and engine code — focu
 
 ---
 
-## 📘 Contents
-
-| File | Description |
-|------|-------------|
-| `White_Paper.pdf` | Core Codex white paper (conceptual version, no math) |
-| `The Seven Magick Codex...pdf` | Extended framework linking symbolic archetypes to scientific models |
-
----
-
 ## 🧠 What Are the Seven Living Magicks?
 
 Each “Magick” represents a symbolic force, process, or transformation.  
