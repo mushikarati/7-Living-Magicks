@@ -41,12 +41,7 @@ Do not reproduce, republish, or build derivative works without permission.
 The **engine**, including the mathematical compression logic and entropy dynamics, has been published separately in a protected repository under the MIT License.
 
 ---
-
-## 📜 License
-
-This repository is licensed under the **MIT License** — but applies only to the symbolic documents in this repo.  
-The mathematical source and compression logic remain protected and unpublished in this branch.
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16092500.svg)](https://doi.org/10.5281/zenodo.16092500)
 ---
 
 ## 📎 Related Work
