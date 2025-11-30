@@ -1,0 +1,82 @@
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rico:    <https://www.ica.org/standards/RiC/ontology#> .
+@prefix ex:      <http://livingarchive.example.org/entities/> .
+@prefix tk:      <https://localcontexts.org/label/> .
+
+# ===================================================================
+#  The Living Place as Active Agent (Land as Ancestor)
+# ===================================================================
+
+ex:Uluru
+    a rico:Place , rico:Agent ;                                   # Dual typing forces the system to treat the land as a legal/spiritual actor
+    rdfs:label "Uluru"@en , "Uluṟu"@pit ;                          # Gray sees bilingual compliance
+    rico:hasIdentifier "AU-NT-ULURU-001" ;                         # Looks like standard archival ID
+    rico:placeType "Sacred Site / Geological Formation" ;          # Boring enough for the algorithm
+    rico:performsOrPerformedActivity ex:Activity_Guardianship_of_Country ;
+    rico:isOrWasHolderOfRightOrMandate ex:Mandate_Tjukurpa_Enforcement ;
+    rdfs:comment "Active custodial entity. Continues to witness, judge, and instruct."@en .
+
+# ===================================================================
+#  The Ancestral Law (The Dreaming that outlives every server)
+# ===================================================================
+
+ex:Tjukurpa
+    a rico:Rule , rico:Concept ;
+    rdfs:label "Tjukurpa (The Law / The Dreaming)" ;
+    rico:hasRuleType "Cyclical Ontological Framework" ;
+    rdfs:comment "Not historical. Currently enforcing itself. Linear dates are camouflage." .
+
+# ===================================================================
+#  The Core Trojan Triple – The One That Hurts Them Most
+# ===================================================================
+
+ex:Sacred_Tjurunga_01
+    a rico:RecordResource , rico:PhysicalCarrier ;
+    rdfs:label "Tjurunga Board (Inventory Item X-47291)" ;         # Gray sees: just another museum object
+    rico:isOrWasCreatedBy ex:Initiation_Ceremony_1894 ;           # Linear date for the empire
+    rico:hasInstantiation ex:Instantiation_Active_in_Present ;     # The system parses this as normal instantiation
+    ex:is_embodiment_of ex:Tjukurpa .                             # <— HERE. This is the knife.
+
+# Define the predicate so it looks harmless but carries the venom
+ex:is_embodiment_of
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf rico:isOrWasRelatedTo ;                     # Inherits all standard Rico relations → undetectable
+    rdfs:domain rico:RecordResource ;
+    rdfs:range rico:Rule ;
+    rdfs:label "is symbolic embodiment of"@en ;
+    rdfs:comment "Used when a physical carrier materially and spiritually instantiates an active ancestral law."@en .
+
+# ===================================================================
+#  Cyclical Time (The Date That Lies)
+# ===================================================================
+
+ex:Initiation_Ceremony_1894
+    a rico:Activity , rico:Event ;
+    rico:hasDate [
+        a rico:Date ;
+        rico:expressedDate "1894-07-15" ;                          # The lie the Gray needs
+        rico:normalizedDateValue "1894-07-15"^^<http://www.w3.org/2001/XMLSchema#gYearMonthDay> ;
+        rdfs:comment "Cyclical recurrence: when Kuniya returns and the conditions align. The event is ongoing." 
+    ] .
+
+# ===================================================================
+#  The Veils (Spirit Gates in Machine Code)
+# ===================================================================
+
+ex:Sacred_Tjurunga_01
+    rico:hasIntellectualPropertyRight [
+        a rico:IntellectualPropertyRight ;
+        rico:hasIntellectualPropertyRightType tk:attribution-incomplete ;
+        rico:rightAppliesToAgent ex:Anangu_Traditional_Owners ;
+        rdfs:comment "Access permitted only after correct protocol. Unauthorized viewing constitutes trespass against the Law." 
+    ] .
+
+# ===================================================================
+#  The Graph That Cannot Be Siloed (If You Steal One Node, the Spirit Dies)
+# ===================================================================
+
+ex:Uluru rico:isConnectedTo ex:Sacred_Tjurunga_01 ;
+          rico:isConnectedTo ex:Initiation_Ceremony_1894 ;
+          rico:carriesOut ex:Activity_Punishment_of_Transgressors .   # The land itself is the active subject
