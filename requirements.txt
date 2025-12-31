@@ -1,0 +1,2 @@
+# Vercel uses Python 3.9+ standard library
+# No external dependencies needed
