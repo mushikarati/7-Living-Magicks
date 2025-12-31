@@ -1,0 +1,16 @@
+# Core dependencies for 7 Living Magicks Codex
+# Python 3.9+
+
+# Currently no external dependencies required
+# The engine uses only standard library:
+# - math
+# - random
+# - zlib
+# - collections
+# - json
+# - sys
+# - re
+# - abc
+# - dataclasses
+# - typing
+# - datetime
