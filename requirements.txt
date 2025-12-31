@@ -1,8 +1,14 @@
 # Core dependencies for 7 Living Magicks Codex
 # Python 3.9+
 
-# Currently no external dependencies required
-# The engine uses only standard library:
+# Optional dependencies for enhanced output
+rich>=13.0.0  # Enhanced CLI visualization (optional for septenary_spirit_engine.py)
+
+# Development dependencies
+pytest>=7.0.0  # Testing framework
+pytest-cov>=4.0.0  # Code coverage
+
+# Core engines use only standard library:
 # - math
 # - random
 # - zlib

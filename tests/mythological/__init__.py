@@ -1,0 +1,1 @@
+"""Mythological consistency tests."""
