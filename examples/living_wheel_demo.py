@@ -13,7 +13,10 @@ docs/theory/mathematical_proofs.md
 """
 
 import sys
-sys.path.insert(0, '../src')
+import os
+
+# Add parent directory to path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from src.core.constants import Constants
 from src.engines.septenary_spirit_engine import SeptenaryEngine

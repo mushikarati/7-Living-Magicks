@@ -227,9 +227,6 @@ class SeptenaryEngine:
             Phase.BLUE
         ]
 
-        current_idx = phase_order.index(self.state.phase)
-        next_idx = (current_idx + 1) % len(phase_order)
-
         # On completion of Blue, insert Violet before returning to Black
         if self.state.phase == Phase.BLUE:
             self.state.cycle_count += 1
@@ -237,6 +234,9 @@ class SeptenaryEngine:
         elif self.state.phase == Phase.VIOLET:
             return Phase.BLACK
         else:
+            # Find current phase in order
+            current_idx = phase_order.index(self.state.phase)
+            next_idx = (current_idx + 1) % len(phase_order)
             return phase_order[next_idx]
 
     def step(self, input_stimulus: float = 0.0) -> SpiritState:
