@@ -1,2 +1,20 @@
-# Vercel uses Python 3.9+ standard library
-# No external dependencies needed
+# Seven Living Magicks Codex - Python Dependencies
+
+# Testing
+pytest>=7.4.0
+hypothesis>=6.82.0  # Property-based testing
+
+# Code Quality
+black>=23.0.0  # Code formatting
+flake8>=6.0.0  # Linting
+
+# Optional: For advanced compression metrics
+# numpy>=1.24.0
+# scipy>=1.10.0
+
+# Optional: For PDF parsing in archive module
+# PyPDF2>=3.0.0
+# pdfplumber>=0.9.0
+
+# Vercel API dependencies (existing)
+# Python 3.9+ standard library

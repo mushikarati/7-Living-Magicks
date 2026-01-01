@@ -1,0 +1,101 @@
+name: Research Note
+description: Document research, external system mappings, or theoretical findings
+title: "[RESEARCH] "
+labels: ["docs"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to document research findings, external system comparisons, or theoretical insights.
+
+  - type: dropdown
+    id: research-type
+    attributes:
+      label: Research Type
+      description: What kind of research is this?
+      options:
+        - External system mapping (Crowley, Enochian, etc.)
+        - Compression theory
+        - Symbolic logic / Lean formalization
+        - Canon law interpretation
+        - Calendar/calendar systems (364/13 etc.)
+        - Archive analysis
+        - Other theoretical work
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Research Question or Topic
+      description: What are you investigating?
+      placeholder: Describe the research question or area
+    validations:
+      required: true
+
+  - type: textarea
+    id: findings
+    attributes:
+      label: Findings or Observations
+      description: What did you discover?
+      placeholder: |
+        Document your research findings, observations, or insights here.
+        Include references, links, or citations as needed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: canon-relevance
+    attributes:
+      label: Canon Relevance
+      description: How does this relate to the 7-color Codex?
+      placeholder: |
+        - Does this confirm or challenge existing canon?
+        - Does this suggest new adjacency rules?
+        - How does this map to the ⚫→⚪→🟡→🟤→🔴→🟢→🔵 sequence?
+    validations:
+      required: false
+
+  - type: textarea
+    id: external-mapping
+    attributes:
+      label: External System Mapping
+      description: If comparing to external systems, document the mapping
+      placeholder: |
+        e.g., Crowley's system → Codex equivalents
+        Enochian calls → Color operations
+        Other symbolic frameworks → Canon law
+    validations:
+      required: false
+
+  - type: textarea
+    id: open-questions
+    attributes:
+      label: Open Questions
+      description: What remains unclear or needs further investigation?
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Links, papers, books, or sources
+      placeholder: |
+        - [Source title](URL)
+        - Book: Title, Author, Year
+        - Archive file: path/to/file
+    validations:
+      required: false
+
+  - type: textarea
+    id: action-items
+    attributes:
+      label: Action Items
+      description: What should be done with this research?
+      placeholder: |
+        - Add to docs/research/
+        - Update GLOSSARY.md
+        - Create new feature based on findings
+    validations:
+      required: false

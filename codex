@@ -1,0 +1,70 @@
+#!/usr/bin/env python3
+"""
+Codex CLI - Main entry point for all Codex tools.
+
+Usage:
+    codex check <file>      # Validate canon adjacency
+    codex --version         # Show version
+    codex --help            # Show help
+"""
+
+import sys
+from pathlib import Path
+
+# Add src to path
+sys.path.insert(0, str(Path(__file__).parent / "src"))
+
+from cli.codex_check import main as check_main
+
+
+def show_help():
+    print("""
+Codex CLI - Seven Living Magicks Toolchain
+
+Commands:
+  check <file>       Validate token sequence against canon law
+  check --stdin      Validate from stdin
+
+Options:
+  --help            Show this help message
+  --version         Show version
+
+Examples:
+  codex check sequence.txt
+  echo "⚫⚪🟡" | codex check --stdin
+  codex check sequence.json -v
+
+For command-specific help:
+  codex check --help
+""")
+
+
+def show_version():
+    from canon.canon import get_canon_version
+    print(f"Codex CLI v1.0.0")
+    print(f"Canon version: {get_canon_version()}")
+
+
+def main():
+    if len(sys.argv) < 2:
+        show_help()
+        sys.exit(1)
+
+    command = sys.argv[1]
+
+    if command in ["--help", "-h", "help"]:
+        show_help()
+    elif command in ["--version", "-v"]:
+        show_version()
+    elif command == "check":
+        # Pass remaining args to check command
+        sys.argv = ["codex check"] + sys.argv[2:]
+        check_main()
+    else:
+        print(f"Unknown command: {command}", file=sys.stderr)
+        print("Run 'codex --help' for usage", file=sys.stderr)
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()

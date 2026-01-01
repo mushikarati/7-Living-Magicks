@@ -1,0 +1,58 @@
+# GitHub Labels Configuration for 7-Living-Magicks
+# Use with: gh label sync --file .github/labels.yml
+
+# Core Domain Labels
+- name: "canon-law"
+  color: "5319e7"
+  description: "Issues related to the 7-color adjacency law, sequence validation, and core canon rules"
+
+- name: "parser"
+  color: "fbca04"
+  description: "Archive parsing, token extraction, document ingestion"
+
+- name: "compression"
+  color: "0052cc"
+  description: "MDL/NCD metrics, entropy analysis, degeneracy detection"
+
+- name: "lean"
+  color: "84b6eb"
+  description: "Lean 4 formalization, proofs, type theory"
+
+- name: "cli"
+  color: "c2e0c6"
+  description: "Command-line interface, 'codex check' command, tooling UX"
+
+- name: "docs"
+  color: "0075ca"
+  description: "Documentation, CANON.md, glossary, research crosswalk pages"
+
+- name: "tests"
+  color: "bfd4f2"
+  description: "Unit tests, property tests, golden corpus, test infrastructure"
+
+- name: "ci"
+  color: "ededed"
+  description: "GitHub Actions, continuous integration, automated checks"
+
+# Issue Type Labels
+- name: "bug"
+  color: "d73a4a"
+  description: "Something isn't working correctly or violates canon"
+
+- name: "refactor"
+  color: "e99695"
+  description: "Code restructuring without changing behavior"
+
+# Meta Labels
+- name: "good-first-issue"
+  color: "7057ff"
+  description: "Good for newcomers to the Codex"
+
+- name: "blocked"
+  color: "d876e3"
+  description: "Cannot proceed until dependency is resolved"
+
+# Gray Event Label (special)
+- name: "gray-event"
+  color: "808080"
+  description: "Illegal jump, degeneracy, or canon violation detected"

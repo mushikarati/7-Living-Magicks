@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Seven Living Magicks Canon Definition",
+  "description": "Single source of truth for the 7-color sequence, adjacency rules, and meta tokens",
+  "version": "1.0.0",
+  "canon": {
+    "colors": {
+      "ordered_sequence": [
+        {
+          "index": 0,
+          "name": "Black",
+          "symbol": "⚫",
+          "meaning": "The Eraser — entropy, sacred endings",
+          "hex": "#000000"
+        },
+        {
+          "index": 1,
+          "name": "White",
+          "symbol": "⚪",
+          "meaning": "The Envelope — thread of structure",
+          "hex": "#FFFFFF"
+        },
+        {
+          "index": 2,
+          "name": "Yellow",
+          "symbol": "🟡",
+          "meaning": "The Spark — ignition and will",
+          "hex": "#FFFF00"
+        },
+        {
+          "index": 3,
+          "name": "Brown",
+          "symbol": "🟤",
+          "meaning": "The Womb — earth's vessel",
+          "hex": "#8B4513"
+        },
+        {
+          "index": 4,
+          "name": "Red",
+          "symbol": "🔴",
+          "meaning": "The Pulse — heart of sacrifice",
+          "hex": "#FF0000"
+        },
+        {
+          "index": 5,
+          "name": "Green",
+          "symbol": "🟢",
+          "meaning": "The Vine — breath and symbiosis",
+          "hex": "#00FF00"
+        },
+        {
+          "index": 6,
+          "name": "Blue",
+          "symbol": "🔵",
+          "meaning": "The Mirror — return and reflection",
+          "hex": "#0000FF"
+        }
+      ]
+    },
+    "adjacency": {
+      "rule": "±1 mod 7",
+      "description": "All valid transitions must be to the immediately adjacent color in the cycle (forward or backward)",
+      "modulus": 7,
+      "valid_deltas": [1, -1, 6],
+      "note": "Delta of 6 is equivalent to -1 mod 7"
+    },
+    "meta_tokens": {
+      "violet": {
+        "name": "Violet",
+        "symbol": "⚿",
+        "meaning": "Meta/void channel — outside the 7-color cycle",
+        "description": "Represents the meta-level, void, or operations outside the standard cycle"
+      },
+      "gray": {
+        "name": "Gray",
+        "symbol": "🪩",
+        "meaning": "Illegal jump, degenerate loop, or entropy plateau",
+        "description": "Triggered by adjacency violations or compression degeneracy",
+        "trigger_conditions": [
+          "Adjacency law violated (delta not in {+1, -1} mod 7)",
+          "Compression/entropy hits flat mimic plateau threshold",
+          "Unknown token encountered"
+        ]
+      }
+    },
+    "invariants": {
+      "cycle_length": 7,
+      "cycle_type": "circular",
+      "zero_indexed": true,
+      "wrap_around": true,
+      "description": "The sequence forms a closed cycle: Black(0) → ... → Blue(6) → Black(0)"
+    }
+  },
+  "metadata": {
+    "author": "MUSHIKARATI",
+    "copyright": "© 2025 MUSHIKARATI. All rights reserved.",
+    "license": "Proprietary - See repository LICENSE",
+    "created": "2025-01-01",
+    "canonical_file": "canon/canon.json"
+  }
+}
