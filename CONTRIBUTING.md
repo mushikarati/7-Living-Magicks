@@ -1,38 +1,98 @@
-# Contributing to 7 Living Magicks
+# Contributing to 7 Living Magicks Archive
 
 ## Intellectual Property Notice
 
 © 2025 MUSHIKARATI. All rights reserved.
 
-This work is part of a registered symbolic system. Please review the license terms before contributing.
+This is a **documentation archive** for the Seven Living Magicks symbolic framework.
+
+---
 
 ## How to Contribute
 
-### Reporting Issues
-- Use the GitHub Issues tab
-- Provide clear descriptions
-- Include reproduction steps for bugs
-- Tag appropriately (bug, enhancement, documentation, etc.)
+### Documentation Improvements
 
-### Suggesting Enhancements
-- Open an issue with the `enhancement` label
-- Explain the rationale and use case
-- Discuss implementation approach if applicable
+We welcome contributions to improve documentation clarity and accessibility:
 
-### Code Contributions
-Currently, code contributions are restricted. For collaboration inquiries, please contact the author through GitHub.
+- **Typo fixes** - Submit via pull request
+- **Clarifications** - Open an issue to discuss
+- **Additional examples** - Propose through issues
+- **Cross-references** - Help link related concepts
+- **Translations** - Contact for coordination
 
-### Documentation
-Documentation improvements are welcome:
-- Fix typos or clarify explanations
-- Add examples or use cases
-- Improve code comments
+### Theoretical Extensions
 
-Please open an issue first to discuss documentation changes.
+For theoretical contributions:
+
+1. Open an issue describing the extension
+2. Explain how it relates to existing framework
+3. Provide references/citations if applicable
+4. Discuss alignment with core principles
+
+### Research Citations
+
+If you've used this framework in research:
+
+- Add your citation to a new file: `docs/citations/[your-work].md`
+- Include: Title, authors, year, publication, DOI/link
+- Brief description of how the framework was applied
+
+---
+
+## Contribution Guidelines
+
+### Documentation Style
+
+- Use clear, accessible language
+- Include examples where helpful
+- Maintain consistent formatting with existing docs
+- Reference mathematical proofs where applicable
+
+### File Organization
+
+```
+docs/
+├── theory/        # Core symbolic framework
+├── research/      # Academic papers
+├── architecture/  # System design
+├── citations/     # Work citing this framework
+└── issues/        # Historical integration notes
+```
+
+### Commit Messages
+
+Use descriptive commit messages:
+- ✅ "Fix typo in seven_magicks.md"
+- ✅ "Add cross-reference to mathematical proofs"
+- ✅ "Clarify Genesis Gap explanation"
+- ❌ "Update docs"
+
+---
 
 ## Questions?
 
-For questions about the framework, open a discussion in the Issues tab.
+Open an issue for:
+- Clarification on concepts
+- Suggestions for improvements
+- Discussion of theoretical extensions
+- Citation submissions
 
-For academic or research collaboration, please cite:
-- DOI: [10.5281/zenodo.16092500](https://doi.org/10.5281/zenodo.16092500)
+---
+
+## What NOT to Contribute
+
+- Code implementations (those belong in separate repos)
+- Unrelated symbolic systems
+- Changes that contradict core principles (364° geometry, operator sequence, etc.)
+
+---
+
+## Academic Collaboration
+
+For research collaboration or extensive theoretical work:
+- Contact through GitHub issues
+- Reference DOI: [10.5281/zenodo.16092500](https://doi.org/10.5281/zenodo.16092500)
+
+---
+
+*This is a knowledge archive. Implementation belongs elsewhere.*

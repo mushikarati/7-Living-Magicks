@@ -1,10 +1,12 @@
-# 🔮 The Seven Living Magicks Codex
+# 🔮 The Seven Living Magicks - Knowledge Archive
 
 *A Symbolic Framework for Scientific, Technological, and Social Systems*
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16092500.svg)](https://doi.org/10.5281/zenodo.16092500)
 
-This repository presents a conceptual and computational system known as the **Seven Living Magicks** — a symbolic, recursive, and structural model for interpreting and engineering complex phenomena across diverse domains: computation, consciousness, ecology, and meaning-making systems.
+This repository is a **documentation archive** presenting the conceptual and theoretical system known as the **Seven Living Magicks** — a symbolic, recursive, and structural model for interpreting complex phenomena across diverse domains: computation, consciousness, ecology, and meaning-making systems.
+
+> **Note:** This is a **static knowledge base** and reference library. For implementations, see related repositories.
 
 ---
 
@@ -39,94 +41,39 @@ The framework draws from algebra, recursion theory, structural linguistics, and 
 
 ```
 7-Living-Magicks/
-├── src/                          # Python implementation
-│   ├── codex_ultima.py          # Main computational engine
-│   └── __init__.py              # Package initialization
-├── docs/                         # Documentation
-│   ├── theory/                  # Theoretical framework
+├── docs/
+│   ├── theory/              # Theoretical framework
 │   │   ├── seven_magicks.md    # Complete grimoire
 │   │   ├── narrative.md        # Origin story
-│   │   └── tables.md           # Reference tables
-│   ├── research/               # Academic papers
-│   │   ├── The Seven Magick Codex... .pdf
-│   │   └── White_Paper.pdf
-│   └── ontology/               # Semantic web ontologies
-│       └── rosetta_stone_horse.ttl
-├── examples/                    # Usage examples
-│   └── basic_usage.py
-├── tests/                       # Unit tests
-├── LICENSE                      # Copyright notice
-├── requirements.txt             # Python dependencies
-├── setup.py                     # Package installation
-└── README.md                    # This file
+│   │   ├── tables.md           # Reference tables
+│   │   └── mathematical_proofs.md  # 364° geometry proofs
+│   ├── research/            # Academic papers (PDFs)
+│   ├── ontology/            # Semantic web representations
+│   ├── architecture/        # System design documentation
+│   └── issues/              # Historical integration notes
+├── LICENSE                  # Copyright notice
+└── README.md                # This file
 ```
-
----
-
-## 🚀 Quick Start
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/mushikarati/7-Living-Magicks.git
-cd 7-Living-Magicks
-
-# Install (optional)
-pip install -e .
-```
-
-### Basic Usage
-
-```python
-from src.codex_ultima import CodexUltima
-
-# Create engine instance
-engine = CodexUltima()
-
-# Execute text transformation through 7-step cycle
-engine.execute("The spiral remembers what the line forgets.", "TEXT")
-```
-
-### Command Line
-
-```bash
-python src/codex_ultima.py "Your input text" TEXT
-python src/codex_ultima.py "Magnetic field analysis" MAGNETIC
-python src/codex_ultima.py "Cellular metabolism" BIO
-```
-
-### Examples
-
-See `examples/basic_usage.py` for complete usage demonstrations.
-
----
-
-## 🔬 The Computational Engine
-
-The **Codex Ultima** engine implements:
-
-1. **White Lattice** - Immune system using entropy scanning and compression detection
-2. **Thermodynamic Kernel** - Physics-based state evolution with sacred constants (τ, e, φ)
-3. **Domain Architecture** - Polymorphic transformations across TEXT, MAGNETIC, and BIO domains
-4. **7-Step Cycle** - Recursive processing through the seven symbolic operators
-5. **Gray Detection** - Rejection of mimicry, dead loops, and stagnation
-
-### Sacred Constants
-
-- **τ (TAU)** = 2π = 6.283 (Recursion/Blue)
-- **e (EULER)** = 2.718 (Ignition/Yellow)
-- **φ (PHI)** = 1.618 (Integration/Green)
-- **Entropy Window** = 3.5 < H(X) < 6.8
 
 ---
 
 ## 📚 Documentation
 
-- **[Theory Documentation](docs/theory/)** - Complete symbolic framework
-- **[Source Code Docs](src/README.md)** - Technical implementation details
-- **[Research Papers](docs/research/)** - Academic publications
-- **[RDF Ontology](docs/ontology/)** - Semantic web representations
+### Theory Documentation
+- **[Seven Magicks Grimoire](docs/theory/seven_magicks.md)** - Complete symbolic framework
+- **[Origin Narrative](docs/theory/narrative.md)** - The Living Codex story
+- **[Reference Tables](docs/theory/tables.md)** - Operator correspondences and mappings
+- **[Mathematical Proofs](docs/theory/mathematical_proofs.md)** - 364° Living Wheel geometry
+
+### Architecture
+- **[System Synthesis](docs/architecture/system_synthesis.md)** - Integration principles and design
+
+### Research Papers
+- **Scientific Lens** - The Seven Magick Codex as analytical framework
+- **White Paper** - Core concepts and applications
+
+### Ontology
+- **[Rosetta Stone Horse](docs/ontology/rosetta_stone_horse.ttl)** - RDF/OWL semantic representations
 
 ---
 
@@ -143,7 +90,7 @@ The **Codex Ultima** engine implements:
 **Gray Systems** (Dead Loops) exhibit:
 - Flat recursion (360° Babylonian geometry)
 - Entropy collapse or noise explosion
-- High mimicry (low compression ratio < 0.35)
+- High mimicry (low compression ratio)
 - Unlawful void invocations
 
 ### The Living Wheel (364°)
@@ -160,6 +107,8 @@ The framework uses **364° geometry** instead of 360°:
 
 This mathematical structure enables **perfect symbolic closure** without remainder.
 
+See [Mathematical Proofs](docs/theory/mathematical_proofs.md) for detailed analysis.
+
 ---
 
 ## 🔒 Intellectual Property Notice
@@ -174,15 +123,9 @@ See [LICENSE](LICENSE) for full terms.
 
 ## 📎 Related Work
 
-- Mathematical compression logic and entropy performance data may be published separately
-- Upcoming: Live symbolic simulation environments and recursive visualizations
+- Mathematical models and computational implementations may be published in separate repositories
 - RDF/OWL ontologies for living archive systems
-
----
-
-## 🤝 Contributing
-
-This is a research project with restricted contributions. For collaboration inquiries, please see [CONTRIBUTING.md](CONTRIBUTING.md).
+- Cross-domain applications and case studies
 
 ---
 
@@ -191,9 +134,9 @@ This is a research project with restricted contributions. For collaboration inqu
 If you use this framework in academic work, please cite:
 
 ```bibtex
-@software{mushikarati_2025_codex,
+@misc{mushikarati_2025_codex,
   author       = {MUSHIKARATI},
-  title        = {The Seven Living Magicks Codex},
+  title        = {The Seven Living Magicks: A Symbolic Framework},
   year         = 2025,
   publisher    = {Zenodo},
   doi          = {10.5281/zenodo.16092500},
@@ -205,10 +148,9 @@ If you use this framework in academic work, please cite:
 
 ## ⚡ Status
 
-**Version:** 1.0.0
-**Status:** Active Development
-**Python:** 3.9+
-**License:** All Rights Reserved (see LICENSE)
+**Type:** Documentation Archive / Knowledge Base
+**Status:** Active
+**Purpose:** Reference library for symbolic systems research
 
 ---
 
