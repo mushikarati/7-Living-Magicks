@@ -1,0 +1,8 @@
+{
+  "description": "Short pattern (0-1-2-1) repeated multiple times",
+  "expected_result": "pass",
+  "expected_gray_events": 0,
+  "expected_degeneracy": true,
+  "degeneracy_reason": "Pattern repetition causes high compression",
+  "tags": ["degenerate", "pattern-repetition", "short-loop"]
+}

@@ -1,0 +1,8 @@
+{
+  "description": "Degenerate alternation: Black-White repeated pattern",
+  "expected_result": "pass",
+  "expected_gray_events": 0,
+  "expected_degeneracy": true,
+  "degeneracy_reason": "High compression, low entropy, plateau detected",
+  "tags": ["degenerate", "alternating", "two-colors"]
+}

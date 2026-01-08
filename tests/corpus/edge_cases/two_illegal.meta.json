@@ -1,0 +1,7 @@
+{
+  "description": "Two elements with illegal transition",
+  "expected_result": "fail",
+  "expected_gray_events": 1,
+  "expected_degeneracy": false,
+  "tags": ["edge-case", "two-elements", "illegal"]
+}

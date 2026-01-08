@@ -1,0 +1,8 @@
+{
+  "description": "Mimic loop: Exact repetition of full cycle 10 times",
+  "expected_result": "pass",
+  "expected_gray_events": 0,
+  "expected_degeneracy": true,
+  "degeneracy_reason": "High compression ratio due to exact pattern repetition",
+  "tags": ["degenerate", "mimic-loop", "exact-repetition"]
+}

@@ -1,0 +1,7 @@
+{
+  "description": "Single element (no transitions)",
+  "expected_result": "pass",
+  "expected_gray_events": 0,
+  "expected_degeneracy": false,
+  "tags": ["edge-case", "single-element"]
+}

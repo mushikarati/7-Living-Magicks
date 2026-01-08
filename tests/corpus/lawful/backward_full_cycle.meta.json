@@ -1,0 +1,7 @@
+{
+  "description": "Complete backward cycle through all 7 colors",
+  "expected_result": "pass",
+  "expected_gray_events": 0,
+  "expected_degeneracy": false,
+  "tags": ["lawful", "backward", "full-cycle"]
+}

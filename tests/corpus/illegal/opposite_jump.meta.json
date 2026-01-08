@@ -1,0 +1,9 @@
+{
+  "description": "Illegal jump to opposite side: Black (0) to Red (4)",
+  "expected_result": "fail",
+  "expected_gray_events": 1,
+  "expected_degeneracy": false,
+  "violation_type": "adjacency_violation",
+  "violation_delta": 4,
+  "tags": ["illegal", "large-jump", "opposite"]
+}

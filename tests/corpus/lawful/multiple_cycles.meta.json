@@ -1,0 +1,8 @@
+{
+  "description": "Two complete forward cycles plus start of third",
+  "expected_result": "pass",
+  "expected_gray_events": 0,
+  "expected_degeneracy": false,
+  "tags": ["lawful", "forward", "multiple-cycles"],
+  "note": "May show high compression but respects adjacency"
+}

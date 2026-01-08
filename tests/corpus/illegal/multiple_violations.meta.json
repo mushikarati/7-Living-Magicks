@@ -1,0 +1,7 @@
+{
+  "description": "Multiple adjacency violations in sequence",
+  "expected_result": "fail",
+  "expected_gray_events": 3,
+  "expected_degeneracy": false,
+  "tags": ["illegal", "multiple-violations"]
+}

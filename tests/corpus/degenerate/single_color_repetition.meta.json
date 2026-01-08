@@ -1,0 +1,9 @@
+{
+  "description": "Extreme degeneracy: Single color repeated 50 times",
+  "expected_result": "fail",
+  "expected_gray_events": 49,
+  "expected_degeneracy": true,
+  "degeneracy_reason": "Zero entropy, perfect compression",
+  "tags": ["degenerate", "single-color", "extreme"],
+  "note": "Also fails adjacency (self-transitions illegal)"
+}

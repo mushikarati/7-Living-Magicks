@@ -1,0 +1,8 @@
+{
+  "description": "Mix of legal transitions with one illegal jump (2 to 5)",
+  "expected_result": "fail",
+  "expected_gray_events": 1,
+  "expected_degeneracy": false,
+  "violation_index": 2,
+  "tags": ["illegal", "mixed", "single-violation"]
+}

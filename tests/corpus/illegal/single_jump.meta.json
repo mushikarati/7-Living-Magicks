@@ -1,0 +1,9 @@
+{
+  "description": "Illegal jump: Black (0) to Yellow (2), skipping White (1)",
+  "expected_result": "fail",
+  "expected_gray_events": 1,
+  "expected_degeneracy": false,
+  "violation_type": "adjacency_violation",
+  "violation_delta": 2,
+  "tags": ["illegal", "single-jump", "skip-one"]
+}

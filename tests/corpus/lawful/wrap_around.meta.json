@@ -1,0 +1,7 @@
+{
+  "description": "Forward wrap-around from Blue (6) to Black (0)",
+  "expected_result": "pass",
+  "expected_gray_events": 0,
+  "expected_degeneracy": false,
+  "tags": ["lawful", "wrap-around", "forward"]
+}

@@ -1,0 +1,7 @@
+{
+  "description": "Two elements with legal transition",
+  "expected_result": "pass",
+  "expected_gray_events": 0,
+  "expected_degeneracy": false,
+  "tags": ["edge-case", "two-elements", "legal"]
+}
