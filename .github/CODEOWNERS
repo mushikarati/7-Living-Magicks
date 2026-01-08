@@ -1,0 +1,45 @@
+# CODEOWNERS - Auto-assign reviewers for specific paths
+# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything
+* @mushikarati
+
+# Lean formalization and proofs
+/lean/** @mushikarati
+*.lean @mushikarati
+
+# Core engine and symbolic recursion
+/engine/** @mushikarati
+/src/engine/** @mushikarati
+
+# Documentation
+/docs/** @mushikarati
+*.md @mushikarati
+CANON.md @mushikarati
+GLOSSARY.md @mushikarati
+
+# Parsers and archive ingestion
+/parsers/** @mushikarati
+/src/parsers/** @mushikarati
+/corpus/** @mushikarati
+
+# Compression and metrics
+/compression/** @mushikarati
+/src/compression/** @mushikarati
+
+# CLI tools
+/cli/** @mushikarati
+/src/cli/** @mushikarati
+
+# Tests and golden corpus
+/tests/** @mushikarati
+/test/** @mushikarati
+
+# CI/CD
+.github/** @mushikarati
+.github/workflows/** @mushikarati
+
+# Canon law definitions (requires extra scrutiny)
+/canon/** @mushikarati
+canon.json @mushikarati
+canon.yaml @mushikarati

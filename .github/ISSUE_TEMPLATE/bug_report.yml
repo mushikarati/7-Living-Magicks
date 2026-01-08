@@ -1,0 +1,107 @@
+name: Bug Report
+description: Report a canon violation, incorrect behavior, or system error
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please provide detailed information to help us fix it.
+
+  - type: dropdown
+    id: bug-type
+    attributes:
+      label: Bug Type
+      description: What type of bug is this?
+      options:
+        - Canon violation (illegal jump, adjacency broken)
+        - Gray event not detected
+        - Parser failure
+        - Compression metric incorrect
+        - CLI tool error
+        - Lean proof error
+        - Documentation error
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Clear description of the bug
+      placeholder: What went wrong?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Detailed steps to reproduce the bug
+      placeholder: |
+        1. Run command: `codex check ...`
+        2. Observe output: ...
+        3. Expected: ...
+        4. Actual: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should happen?
+      placeholder: Describe the correct behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: Describe what went wrong
+    validations:
+      required: true
+
+  - type: textarea
+    id: canon-impact
+    attributes:
+      label: Canon Impact
+      description: Does this bug violate the 7-color adjacency law?
+      placeholder: |
+        - Does this break ±1 mod 7 transitions?
+        - Does this involve Gray events?
+        - Which color sequence is affected?
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: System information
+      placeholder: |
+        - OS:
+        - Python/Node version:
+        - Codex version/commit:
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or Error Messages
+      description: Paste relevant logs, error messages, or stack traces
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other relevant information
+    validations:
+      required: false

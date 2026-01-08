@@ -1,0 +1,111 @@
+name: Archive Ingest
+description: Track ingestion of new archive files, documents, or corpus data
+title: "[ARCHIVE] "
+labels: ["parser"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to track the ingestion of new archive files into the Codex corpus.
+
+  - type: textarea
+    id: files
+    attributes:
+      label: Files to Ingest
+      description: List the files or archive to be ingested
+      placeholder: |
+        - File path: /corpus/new_archive.zip
+        - File type: zip/pdf/txt/other
+        - Size:
+        - Source:
+    validations:
+      required: true
+
+  - type: dropdown
+    id: file-type
+    attributes:
+      label: Primary File Type
+      description: What type of files are being ingested?
+      options:
+        - ZIP archive
+        - PDF documents
+        - Text files
+        - Mixed archive
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Archive Description
+      description: What does this archive contain?
+      placeholder: |
+        Describe the content, topic, or domain of these files.
+        e.g., "Historical canon texts", "Compression test cases", etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: canon-content
+    attributes:
+      label: Canon Content Assessment
+      description: Does this archive contain canon law definitions?
+      placeholder: |
+        - Does it mention the 7-color sequence?
+        - Does it define adjacency rules?
+        - Does it reference Gray/Violet?
+        - What keywords or concepts are present?
+    validations:
+      required: false
+
+  - type: textarea
+    id: extraction-plan
+    attributes:
+      label: Extraction Plan
+      description: How should this archive be processed?
+      placeholder: |
+        - Unzip and flatten structure
+        - Extract text from PDFs
+        - Parse token sequences
+        - Generate manifest.json
+        - Extract canon receipts
+    validations:
+      required: false
+
+  - type: textarea
+    id: tags
+    attributes:
+      label: Proposed Tags/Topics
+      description: Suggested tags for manifest.json
+      placeholder: |
+        e.g., canon-law, compression-theory, calendar, crowley-mapping
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Ingest Checklist
+      description: Track progress of ingestion
+      options:
+        - label: Files uploaded to /corpus/
+          required: false
+        - label: Manifest entry created
+          required: false
+        - label: Checksums verified
+          required: false
+        - label: Canon receipts extracted
+          required: false
+        - label: Tagged and indexed
+          required: false
+        - label: Duplicate check completed
+          required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Any special handling, concerns, or context
+    validations:
+      required: false

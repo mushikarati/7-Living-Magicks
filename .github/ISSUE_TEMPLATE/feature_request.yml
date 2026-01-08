@@ -1,0 +1,92 @@
+name: Feature Request
+description: Propose a new feature, tool, or enhancement
+title: "[FEATURE] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature! Please describe what you'd like to see.
+
+  - type: dropdown
+    id: feature-area
+    attributes:
+      label: Feature Area
+      description: Which part of the Codex is this for?
+      options:
+        - Canon Law (validation, adjacency)
+        - Parser (archive ingestion, token extraction)
+        - Compression (MDL/NCD, entropy)
+        - Lean (formalization, proofs)
+        - CLI (tools, commands)
+        - Engine (symbolic recursion)
+        - Documentation
+        - CI/Testing
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Use Case
+      description: What problem does this feature solve?
+      placeholder: Describe the need or gap this feature addresses
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: How should this feature work?
+      placeholder: Describe the desired behavior or implementation
+    validations:
+      required: true
+
+  - type: textarea
+    id: canon-impact
+    attributes:
+      label: Canon Impact
+      description: Does this feature affect the 7-color sequence or adjacency rules?
+      placeholder: |
+        - Does this introduce new transitions?
+        - Does this change how Gray events are detected?
+        - Does this affect the canon law definition?
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Other approaches you considered
+      placeholder: What else could solve this problem?
+    validations:
+      required: false
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation Notes
+      description: Technical details, dependencies, or design considerations
+      placeholder: Any thoughts on how to build this?
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Mockups, examples, or related work
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      description: Are you willing to help implement this?
+      options:
+        - label: I can help implement this feature
+          required: false
