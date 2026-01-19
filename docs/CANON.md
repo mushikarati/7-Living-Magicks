@@ -11,16 +11,37 @@ This document defines the immutable canon law of the Seven Living Magicks Codex.
 The canonical order is fixed and MUST NOT be modified:
 
 ```
-Index | Symbol | Name   | Meaning
-------|--------|--------|----------------------------------
-  0   |   ⚫   | Black  | The Eraser — entropy, sacred endings
-  1   |   ⚪   | White  | The Envelope — thread of structure
-  2   |   🟡   | Yellow | The Spark — ignition and will
-  3   |   🟤   | Brown  | The Womb — earth's vessel
-  4   |   🔴   | Red    | The Pulse — heart of sacrifice
-  5   |   🟢   | Green  | The Vine — breath and symbiosis
-  6   |   🔵   | Blue   | The Mirror — return and reflection
+# | Symbol | Keyword | Archetype     | Element  | Machine        | Axis       | Core Function
+--|--------|---------|---------------|----------|----------------|------------|----------------------------
+0 |   ⚫   | CUT     | The Eraser    | Time     | Screw          | Torsion    | Collapse, cut, sacred ending
+1 |   ⚪   | FRAME   | The Envelope  | Æther    | Lever          | Lattice    | Structure, syntax, frame
+2 |   🟡   | SPARK   | The Spark     | Fire     | Wedge          | Vertical↑  | Ignition, will, decision
+3 |   🟤   | GROUND  | The Womb      | Earth    | Pulley         | Horizontal | Grounding, ritual, memory
+4 |   🔴   | PULSE   | The Blood     | Water    | Inclined Plane | Vertical↓↑ | Flow, descent, sacrifice
+5 |   🟢   | RELATE  | The Grove     | Nature   | Wheel & Axle   | Diagonal   | Integration, harmony, breath
+6 |   🔵   | RETURN  | The Mirror    | Air/Mind | Spring         | Orbital    | Reflection, return, recursion
 ```
+
+### Symbolic Glyphs
+
+Each Magick has an associated glyph beyond its color emoji:
+- ⚫ Black (0): **⬿** — torsion screw
+- ⚪ White (1): **▩** — lattice frame
+- 🟡 Yellow (2): **▲** — wedge/delta
+- 🟤 Brown (3): **■** — grounded square
+- 🔴 Red (4): **★** — pulse/star
+- 🟢 Green (5): **⬢** — hexagon/breath
+- 🔵 Blue (6): **⚕** — caduceus/return
+
+### Deeper Meanings
+
+- **Black (CUT):** Terminal coalgebra. The torsion cut that completes the cycle and permits new beginning.
+- **White (FRAME):** Monoidal unit. The frame that holds distinction, the lattice that permits form.
+- **Yellow (SPARK):** Left adjoint. The delta wedge that initiates transformation, the spark of volition.
+- **Brown (GROUND):** Atlas containment. The vessel that holds and nourishes, earth's memory keeper.
+- **Red (PULSE):** Cost dissipation. The pulse that moves through sacrifice, emotion in motion. **Bidirectional:** descent (surrender) ↓ and ascent (offering) ↑.
+- **Green (RELATE):** Frobenius algebra. The breath between opposites, symbiosis without homogenization. Wheel rotates while axle stays still.
+- **Blue (RETURN):** Traced SMC. Consciousness realizing its own motion, the mirror that curves back upon itself. Completion that enables new cycle.
 
 **Source of Truth:** `canon/canon.json`
 
@@ -67,23 +88,42 @@ When computing `delta = (to - from) mod 7`, the ONLY legal values are:
 
 ## Meta Tokens
 
-### Violet (⚿)
+### Violet (SEAL) 🟣 ⚸
 
-- **Meaning:** Meta/void channel
-- **Status:** Outside the 7-color cycle
-- **Usage:** Represents operations at the meta-level, void, or outside the standard cycle
+- **Keyword:** SEAL
+- **Symbol/Glyph:** 🟣 / ⚸
+- **Index:** 0 (pre-cycle)
+- **Meaning:** Pre-form singularity, void before breath
+- **Description:** Initial algebra. Lawful reset. The singularity before the first breath, outside and before the cycle.
+- **Status:** Not part of the 7-fold cycle but the void from which it emerges
 - **Not subject to adjacency law** (exists in different domain)
 
-### Gray (🪩)
+### Gray (GOO) 🪩 ∞
 
-- **Meaning:** Illegal jump, degenerate loop, or entropy plateau
-- **Trigger Conditions:**
+- **Keyword:** GOO
+- **Symbol/Glyph:** 🪩 / ∞ (flattened torus, sideways 8)
+- **Index:** ∞ (off-spiral)
+- **Element:** Goo / Concrete / Imitation Æther
+- **Meaning:** Dead loop, mimicry, false recursion
+- **Description:** **Not a Magick but a condition.** Gray arises when the spiral is severed, when life repeats mechanically without memory of why. Breath stops but structure remains.
+
+**Trigger Conditions:**
   1. **Adjacency violation:** Delta not in {1, 6} mod 7
-  2. **Degeneracy detected:** Compression/entropy hits flat mimic plateau threshold
+  2. **NCD mimicry:** Compression/entropy hits flat mimic plateau threshold
   3. **Unknown token:** Encountered symbol not in the canonical sequence
+  4. **Costless operation:** No MDL price paid (Landauer's limit violated)
+  5. **Infinite mirroring:** Blue → Blue → Blue without return to action
+  6. **Form without breath:** Meaning evacuates, structure persists hollow
 
-- **Schema:** See `canon/gray_event_schema.json`
-- **Representation:** Use `GrayEvent` class (Python) for standard format
+**Detection Methods:**
+- **NCD:** Normalized Compression Distance detects mimicry
+- **SCC:** Strongly Connected Components detect non-productive loops
+- **AEGIS:** circular_argumentation, no_ground, costless, high_scc heuristics
+
+**Schema:** See `canon/gray_event_schema.json`
+**Representation:** Use `GrayEvent` class (Python) for standard format
+
+> **The Breath Test:** Does it breathe? Living systems transform with each cycle. Gray systems preserve themselves mechanically, cycles identical, origin forgotten.
 
 ---
 

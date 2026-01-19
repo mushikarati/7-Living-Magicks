@@ -35,61 +35,136 @@ The computed difference between two color indices in a transition: `delta = (to 
 
 ## Colors and Operators
 
-### ⚫ Black (0) - The Eraser
-**Meaning:** Entropy, sacred endings, dissolution, the void that makes space for new beginnings.
+### ⚫ Black (0) - CUT - The Eraser ⬿
+**Keyword:** CUT
+**Archetype:** The Eraser
+**Element:** Time
+**Machine:** Screw
+**Axis:** Torsion
+**Glyph:** ⬿ (torsion screw)
 
-**Symbolic role:** Termination, release, sacred destruction, clearing.
+**Meaning:** Collapse, cut, sacred ending. Terminal coalgebra that completes the cycle and permits new beginning.
 
-### ⚪ White (1) - The Envelope
-**Meaning:** Thread of structure, containment, the boundary that defines form.
+**Symbolic role:** The torsion cut that enables transformation through completion. Not destruction but the sacred ending that makes space for new breath.
 
-**Symbolic role:** Structure, containment, form, definition, scaffolding.
+### ⚪ White (1) - FRAME - The Envelope ▩
+**Keyword:** FRAME
+**Archetype:** The Envelope
+**Element:** Æther
+**Machine:** Lever
+**Axis:** Fixed/Lattice
+**Glyph:** ▩ (lattice frame)
 
-### 🟡 Yellow (2) - The Spark
-**Meaning:** Ignition and will, the initial impulse, creative fire.
+**Meaning:** Structure, syntax, frame. Monoidal unit that holds distinction, the lattice that permits form.
 
-**Symbolic role:** Initiation, will, ignition, creative impulse.
+**Symbolic role:** The frame that makes distinction possible. Not rigid but structural—the envelope that contains without crushing.
 
-### 🟤 Brown (3) - The Womb
-**Meaning:** Earth's vessel, gestation, the ground that holds and nourishes.
+### 🟡 Yellow (2) - SPARK - The Spark ▲
+**Keyword:** SPARK
+**Archetype:** The Spark
+**Element:** Fire
+**Machine:** Wedge
+**Axis:** Vertical ↑
+**Glyph:** ▲ (wedge/delta)
 
-**Symbolic role:** Grounding, vessel, holding space, earth connection.
+**Meaning:** Ignition, will, decision. Left adjoint—the delta wedge that initiates transformation.
 
-### 🔴 Red (4) - The Pulse
-**Meaning:** Heart of sacrifice, lifeblood, vital force, the beating center.
+**Symbolic role:** The spark of volition that begins change. The initial impulse, creative fire, the moment of choice.
 
-**Symbolic role:** Sacrifice, vitality, lifeforce, circulation.
+### 🟤 Brown (3) - GROUND - The Womb ■
+**Keyword:** GROUND
+**Archetype:** The Womb
+**Element:** Earth
+**Machine:** Pulley
+**Axis:** Horizontal
+**Glyph:** ■ (grounded square)
 
-### 🟢 Green (5) - The Vine
-**Meaning:** Breath and symbiosis, connection, growth, the living network.
+**Meaning:** Grounding, ritual, memory. Atlas containment—the vessel that holds and nourishes.
 
-**Symbolic role:** Connection, symbiosis, breath, living systems.
+**Symbolic role:** Earth's memory keeper. The womb that contains without constraining, the ground that permits growth through stability.
 
-### 🔵 Blue (6) - The Mirror
-**Meaning:** Return and reflection, closure, the loop that brings wholeness.
+### 🔴 Red (4) - PULSE - The Blood ★
+**Keyword:** PULSE
+**Archetype:** The Blood
+**Element:** Water
+**Machine:** Inclined Plane
+**Axis:** Vertical ↓↑ (bidirectional)
+**Glyph:** ★ (pulse/star)
 
-**Symbolic role:** Reflection, return, closure, completion.
+**Meaning:** Flow, descent, sacrifice. Cost dissipation—the pulse that moves through sacrifice, emotion in motion.
+
+**Symbolic role:** **The only bidirectional Magick.** Descent ↓ (surrender, falling, grief, ecstasy) and Ascent ↑ (offering, climbing, devotion, cost). Emotion = motion. The pulse of life itself.
+
+### 🟢 Green (5) - RELATE - The Grove ⬢
+**Keyword:** RELATE
+**Archetype:** The Grove
+**Element:** Nature
+**Machine:** Wheel & Axle
+**Axis:** Diagonal
+**Glyph:** ⬢ (hexagon/breath)
+
+**Meaning:** Integration, harmony, breath. Frobenius algebra—the breath between opposites.
+
+**Symbolic role:** Symbiosis without homogenization. The wheel rotates while the axle stays still—change that doesn't lose coherence. The breath that integrates what would otherwise oppose.
+
+### 🔵 Blue (6) - RETURN - The Mirror ⚕
+**Keyword:** RETURN
+**Archetype:** The Mirror
+**Element:** Air/Mind
+**Machine:** Spring
+**Axis:** Orbital
+**Glyph:** ⚕ (caduceus/return)
+
+**Meaning:** Reflection, return, recursion. Traced SMC—consciousness realizing its own motion.
+
+**Symbolic role:** The mirror that curves back upon itself. Completion that enables new cycle. **Dangers:** analysis paralysis, infinite regress (mirror facing mirror), entranced by own reflection. The sky-mirror that must remember to descend.
 
 ---
 
 ## Meta Tokens
 
-### Violet (⚿)
-**Status:** Meta/void channel, outside the 7-color cycle.
+### Violet (SEAL) 🟣 ⚸
+**Keyword:** SEAL
+**Symbol/Glyph:** 🟣 / ⚸
+**Index:** 0 (pre-cycle)
+**Status:** Initial algebra, outside the 7-color cycle
 
-**Usage:** Represents operations at the meta-level, the void, or processes that exist outside the standard cycle. Not subject to adjacency law.
+**Meaning:** Pre-form singularity, void before breath. The lawful reset.
 
-### Gray (🪩)
-**Status:** Error token, violation marker.
+**Usage:** Represents the singularity before the first breath, outside and before the cycle. The void from which the seven emerge. Not subject to adjacency law (exists in different domain).
 
-**Meaning:** Illegal jump, degenerate loop, or entropy plateau.
+### Gray (GOO) 🪩 ∞
+**Keyword:** GOO
+**Symbol/Glyph:** 🪩 / ∞ (flattened torus, sideways 8)
+**Index:** ∞ (off-spiral)
+**Element:** Goo / Concrete / Imitation Æther
+**Status:** Not a Magick but a **condition**
+
+**Meaning:** Dead loop, mimicry, false recursion. **The Anti-Magick.**
+
+**Nature:** Gray is not a Magick but what happens when the spiral is severed. When life repeats mechanically without memory of why. When breath stops but structure remains. When the cycle preserves the system instead of transforming it.
 
 **Trigger conditions:**
-1. Adjacency violation (delta ∉ {1, 6})
-2. Degeneracy detected (compression flatlines)
-3. Unknown token encountered
+1. **Adjacency violation:** delta ∉ {1, 6}
+2. **NCD mimicry:** Compression/entropy flatlines (mimic plateau)
+3. **Unknown token:** Symbol not in canon sequence
+4. **Costless operation:** No MDL price paid (violates Landauer's limit)
+5. **Infinite mirroring:** Blue → Blue → Blue without return to action
+6. **Form without breath:** Meaning evacuates, structure persists hollow
 
-**See also:** `GrayEvent`, `gray_event_schema.json`
+**Detection methods:**
+- **NCD:** Normalized Compression Distance detects mimicry
+- **SCC:** Strongly Connected Components detect non-productive loops
+- **AEGIS heuristics:** circular_argumentation, no_ground, costless, high_scc
+
+**The Breath Test:** Does it breathe? Living spirals transform with each pass. Gray circles preserve without changing. Each cycle identical. Origin forgotten. Ending impossible.
+
+**Three stages of Gooification:**
+1. **Oversaturation:** Symbols lose meaning through overuse
+2. **Hollowing:** Form persists, internal substance drains
+3. **Gooification:** Self-sustaining dead loop, no one remembers why
+
+**See also:** `GrayEvent`, `gray_event_schema.json`, Mimic Loop, Degeneracy
 
 ---
 
