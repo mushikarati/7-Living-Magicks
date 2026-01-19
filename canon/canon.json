@@ -9,50 +9,99 @@
         {
           "index": 0,
           "name": "Black",
+          "keyword": "CUT",
           "symbol": "⚫",
-          "meaning": "The Eraser — entropy, sacred endings",
+          "glyph": "⬿",
+          "archetype": "The Eraser",
+          "element": "Time",
+          "machine": "Screw",
+          "axis": "Torsion",
+          "meaning": "Collapse, cut, sacred ending",
+          "description": "Terminal coalgebra. Torsion cut that completes the cycle and permits new beginning.",
           "hex": "#000000"
         },
         {
           "index": 1,
           "name": "White",
+          "keyword": "FRAME",
           "symbol": "⚪",
-          "meaning": "The Envelope — thread of structure",
+          "glyph": "▩",
+          "archetype": "The Envelope",
+          "element": "Æther",
+          "machine": "Lever",
+          "axis": "Fixed/Lattice",
+          "meaning": "Structure, syntax, frame",
+          "description": "Monoidal unit. The frame that holds distinction, the lattice that permits form.",
           "hex": "#FFFFFF"
         },
         {
           "index": 2,
           "name": "Yellow",
+          "keyword": "SPARK",
           "symbol": "🟡",
-          "meaning": "The Spark — ignition and will",
+          "glyph": "▲",
+          "archetype": "The Spark",
+          "element": "Fire",
+          "machine": "Wedge",
+          "axis": "Vertical ↑",
+          "meaning": "Ignition, will, decision",
+          "description": "Left adjoint. The delta wedge that initiates transformation, the spark of volition.",
           "hex": "#FFFF00"
         },
         {
           "index": 3,
           "name": "Brown",
+          "keyword": "GROUND",
           "symbol": "🟤",
-          "meaning": "The Womb — earth's vessel",
+          "glyph": "■",
+          "archetype": "The Womb",
+          "element": "Earth",
+          "machine": "Pulley",
+          "axis": "Horizontal",
+          "meaning": "Grounding, ritual, memory",
+          "description": "Atlas containment. The vessel that holds and nourishes, earth's memory keeper.",
           "hex": "#8B4513"
         },
         {
           "index": 4,
           "name": "Red",
+          "keyword": "PULSE",
           "symbol": "🔴",
-          "meaning": "The Pulse — heart of sacrifice",
+          "glyph": "★",
+          "archetype": "The Blood",
+          "element": "Water",
+          "machine": "Inclined Plane",
+          "axis": "Vertical ↓↑",
+          "meaning": "Flow, descent, sacrifice",
+          "description": "Cost dissipation. The pulse that moves through sacrifice, emotion in motion. Bidirectional: descent (surrender) and ascent (offering).",
           "hex": "#FF0000"
         },
         {
           "index": 5,
           "name": "Green",
+          "keyword": "RELATE",
           "symbol": "🟢",
-          "meaning": "The Vine — breath and symbiosis",
+          "glyph": "⬢",
+          "archetype": "The Grove",
+          "element": "Nature",
+          "machine": "Wheel & Axle",
+          "axis": "Diagonal",
+          "meaning": "Integration, harmony, breath",
+          "description": "Frobenius algebra. The breath between opposites, symbiosis without homogenization. Wheel rotates while axle stays still.",
           "hex": "#00FF00"
         },
         {
           "index": 6,
           "name": "Blue",
+          "keyword": "RETURN",
           "symbol": "🔵",
-          "meaning": "The Mirror — return and reflection",
+          "glyph": "⚕",
+          "archetype": "The Mirror",
+          "element": "Air/Mind",
+          "machine": "Spring",
+          "axis": "Orbital",
+          "meaning": "Reflection, return, recursion",
+          "description": "Traced SMC. Consciousness realizing its own motion, the mirror that curves back upon itself. Completion that enables new cycle.",
           "hex": "#0000FF"
         }
       ]
@@ -67,20 +116,37 @@
     "meta_tokens": {
       "violet": {
         "name": "Violet",
-        "symbol": "⚿",
-        "meaning": "Meta/void channel — outside the 7-color cycle",
-        "description": "Represents the meta-level, void, or operations outside the standard cycle"
+        "keyword": "SEAL",
+        "symbol": "🟣",
+        "glyph": "⚸",
+        "meaning": "Pre-form singularity, void before breath",
+        "description": "Initial algebra. Lawful reset. The singularity before the first breath, outside and before the cycle.",
+        "index": 0,
+        "note": "Not part of the 7-fold cycle but the void from which it emerges"
       },
       "gray": {
         "name": "Gray",
+        "keyword": "GOO",
         "symbol": "🪩",
-        "meaning": "Illegal jump, degenerate loop, or entropy plateau",
-        "description": "Triggered by adjacency violations or compression degeneracy",
+        "glyph": "∞",
+        "meaning": "Dead loop, mimicry, false recursion",
+        "description": "Not a Magick but a condition. Gray arises when the spiral is severed, when life repeats mechanically without memory of why. Breath stops but structure remains.",
+        "index": "∞",
+        "element": "Goo/Concrete/Imitation Æther",
+        "nature": "Dead recursion, mimicry, false loop",
         "trigger_conditions": [
           "Adjacency law violated (delta not in {+1, -1} mod 7)",
-          "Compression/entropy hits flat mimic plateau threshold",
-          "Unknown token encountered"
-        ]
+          "Compression/entropy hits flat mimic plateau threshold (NCD mimicry)",
+          "Unknown token encountered",
+          "Costless operation (no MDL price paid)",
+          "Infinite mirroring without return to action",
+          "Form without etheric breath (meaning evacuates)"
+        ],
+        "detection": {
+          "ncd": "Normalized Compression Distance detects mimicry",
+          "scc": "Strongly Connected Components detect non-productive loops",
+          "aegis": "circular_argumentation, no_ground, costless, high_scc"
+        }
       }
     },
     "invariants": {
